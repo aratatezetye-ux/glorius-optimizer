@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,9 +12,6 @@
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
 
-    <!-- Izin khusus Shizuku, otomatis di-grant Shizuku Manager setelah user aktifkan
-         Shizuku lewat "adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh"
-         (USB debugging / wireless debugging) atau lewat root. -->
     <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
 
     <application
@@ -38,7 +36,6 @@
         <activity android:name=".DisplayTweakActivity" android:exported="false" />
         <activity android:name=".TouchTweakActivity" android:exported="false" />
 
-        <!-- Wajib ada agar Shizuku dapat mem-broadcast status permission ke app ini -->
         <provider
             android:name="rikka.shizuku.ShizukuProvider"
             android:authorities="${applicationId}.shizuku"
