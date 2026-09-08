@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.GloriusOptimizer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFD700</item>
+        <item name="colorPrimaryDark">#0D0D12</item>
+        <item name="android:windowBackground">#0D0D12</item>
+    </style>
+</resources>
